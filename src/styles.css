@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #daccff; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #daccff; /* White background for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+h1 {
+    background-color: #3b5bc5; /* Slightly darker blue box */
+    color: #000; /* Black text */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2, summary {
+    color: #003366; /* Navy blue color */
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section,
+.field-group {
+    margin-bottom: 20px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='date'],
+input[type='url'],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-option {
+    margin-bottom: 10px;
+}
+
+/* Summary Table */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.summary-table td,
+.summary-table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.summary-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button[type='submit'],
+button.continue-button {
+    background-color: #0052cc; /* Dark blue */
+    color: white;
+}
+
+button[type='submit']:hover,
+button.continue-button:hover {
+    background-color: #003d99;
+}
+
+button.back-button {
+    background-color: #ccc; /* Grey color */
+    color: black;
+}
+
+button.back-button:hover {
+    background-color: #999;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* Accordion Styles */
+details {
+    margin-bottom: 20px;
+}
+
+details > summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e6f7ff; /* Light blue */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+details[open] > summary {
+    background-color: #cce0ff; /* Slightly darker when open */
+}
+
+/* Field Borders */
+.field-group input,
+.field-group select {
+    border: 1px solid #0073e6;
+}
+
+/* Adjustments for Field Layout */
+.field-group {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.field-group:not(:last-child) {
+    margin-bottom: 20px;
+}
